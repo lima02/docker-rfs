@@ -8,6 +8,8 @@ RUN apk add --update alpine-sdk && \
     apk --purge -v del py-pip && \
     rm -rf `find / -regex '.*\.py[co]'` && \
     apk add bash && \
+    apk add --update npm && \
     apk add --update nodejs
 
 WORKDIR /src
+ENTRYPOINT ["/bin/bash", "-c"]
