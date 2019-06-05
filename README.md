@@ -30,7 +30,7 @@ docker run --rm -it `
     -e ENVIRONMENT=$Env:ENVIRONMENT `
     -e VERSION=$Env:VERSION `
     limam/rfs `
-    make package
+   'make package'
 ```
 
 ### deploy
@@ -44,5 +44,5 @@ docker run --rm -it `
     -e ENVIRONMENT=$Env:ENVIRONMENT `
     -e VERSION=$Env:VERSION `
     limam/rfs `
-    make deploy
+    'make deploy'
 ```
